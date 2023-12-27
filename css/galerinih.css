@@ -1,0 +1,204 @@
+@font-face {
+    font-family: "GT America";
+    font-weight: 100;
+    src: url("../fonts/GTAmerica-Light.eot");
+    src: local("☺"),
+        url("../fonts/GTAmerica-Light.woff") format("woff"),
+        url("../fonts/GTAmerica-Light.svg") format("svg");
+}
+
+@font-face {
+    font-family: "GT America";
+    font-weight: 200;
+    src: url("../fonts/GTAmerica-Regular.eot");
+    src: local("☺"),
+        url("../fonts/GTAmerica-Regular.woff") format("woff"),
+        url("../fonts/GTAmerica-Regular.svg") format("svg");
+}
+
+@font-face {
+    font-family: "GT America";
+    font-weight: 400;
+    src: url("../fonts/GT-America-Standard-Medium.eot");
+    src: local("☺"),
+        url("../fonts/GT-America-Standard-Medium.woff") format("woff")
+}
+
+html{
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  -webkit-font-smoothing: antialiased;
+}
+
+body{
+    font-family: 'GT America';
+    font-weight: 200;
+    font-size: 16px;
+    color: #000;
+    letter-spacing: normal;
+    width: 100%;
+    height: 100%;
+    min-height: 700px;
+    margin: 0 auto;
+    background: #ffffff;
+    -webkit-font-smoothing: antialiased;
+}
+
+:focus{
+  outline: 0;
+}
+
+body::-webkit-scrollbar{
+    width: 0 !important;
+}
+
+h1,h2,h3,h4,h5, p, a{
+    font-family: 'GT America';
+    font-weight: 100;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#nav{
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+#footer{
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 5rem;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.footer{
+  width: 100%;
+}
+
+.galeri{
+  position: absolute;
+  width: 2.5rem;
+  top: 5rem;
+  right: 5rem;
+}
+
+.galeri img{
+  display: block;
+  width: 100%;
+}
+
+.logo a, .logo-2 a{
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #000;
+  display: block;
+  margin: 0 auto;
+}
+
+.nih-portal a, .contact a{
+  font-size: 1rem;
+  text-decoration: none;
+  color: #000;
+}
+
+.contact a:hover, .nih-portal a:hover{
+  text-decoration: underline;
+}
+
+#landing{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 700px;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.w-50{
+  position: relative;
+  width:45%;
+}
+
+h1, h2{
+  font-size: 1.5rem;
+}
+
+.nih-portal, .logo-2, .contact{
+  position: relative;
+  width: 33.33%;
+  float: left;
+}
+
+.contact a{
+  float: right;
+  padding-right: 5rem;
+}
+
+.nih-portal a{
+  float: left;
+  padding-left: 5rem;
+}
+
+/* Tablet */
+@media screen and (min-width: 40em) and (max-width: 63.9375em){
+  .w-50 {
+    width: 70%;
+  }
+}
+
+/* End Tablet */
+
+/* Smartphone */
+
+@media screen and (max-width: 39.9375em){
+  .w-50 {
+      width: 75%;
+  }
+
+  h1, h2, .logo a, .logo-2 a, .nih-portal a, .contact a {
+    font-size: 2.5vh;
+  }
+
+  .contact a{
+    padding-right: 1rem;
+  }
+
+  .nih-portal a{
+    padding-left: 1rem;
+  }
+
+  body, #landing{
+    min-height: 0 !important;
+  }
+
+  #nav{
+    top: 1rem;
+  }
+
+  #footer{
+    bottom: 1rem;
+  }
+
+  .galeri{
+    position: absolute;
+    width: 1.5rem;
+    top: 1rem;
+    right: 1rem;
+  }
+}
+::selection {
+    background-color: #dddddd;
+}
+/* End Smartphone */
